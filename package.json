@@ -43,7 +43,6 @@
     "intl": "^1.2.5",
     "jsonwebtoken": "^8.5.1",
     "jwt-decode": "^3.1.2",
-    "knex": "^3.0.1",
     "mongo-tenant": "^1.8.0",
     "mongoose": "^5.12.6",
     "mongoose-morgan": "^1.0.17",
