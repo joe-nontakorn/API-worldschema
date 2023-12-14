@@ -3,14 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "description": "Vansales Linebot API Services",
-  "main": "src/app.js",
+  "main": "src/index.js",
   "engines": {
     "node": "14.x"
   },
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon app",
-    "prod": "NODE_ENV=production node src/app"
+    "start": "node src/index.js",
+    "dev": "nodemon index",
+    "prod": "NODE_ENV=production node src/index"
   },
   "author": "Vansales Application Co., Ltd.",
   "dependencies": {
@@ -43,6 +43,7 @@
     "intl": "^1.2.5",
     "jsonwebtoken": "^8.5.1",
     "jwt-decode": "^3.1.2",
+    "knex": "^3.1.0",
     "mongo-tenant": "^1.8.0",
     "mongoose": "^5.12.6",
     "mongoose-morgan": "^1.0.17",
