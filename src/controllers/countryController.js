@@ -1,16 +1,17 @@
 const db = require('../config/knexConfig');
 
 async function getCountry(req, res) {
-    const { name } = req.query;
+    const { countryCode } = req.query;
 
     try {
       let query = db
         .select("code", "name", "nativeName", "timeZone", "flag")
         .from("country");
-  
-      if (name) {
-        query = query.where("name", "like", `%${name}%`);
-      }
+        if (countryCode) {
+          query = query.where(function () {
+            this.where("code", "like", `%${countryCode}%`)
+          });
+        }
   
       const results = await query;
   
