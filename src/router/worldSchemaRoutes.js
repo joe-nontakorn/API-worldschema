@@ -4,7 +4,6 @@ const worldSchemaController = require("../controllers/worldSchemaController");
 
 // Define routes related to world schema
 // ...
-router.get('/', worldSchemaController.getWorldSchema);
-
+router.get("/", worldSchemaController.getWorldSchema);
 
 module.exports = router;

@@ -4,8 +4,6 @@ const countryController = require("../controllers/countryController");
 
 // Define routes related to countries
 // ...
-router.get('/', countryController.getCountry);
-
-
+router.get("/", countryController.getCountry);
 
 module.exports = router;
